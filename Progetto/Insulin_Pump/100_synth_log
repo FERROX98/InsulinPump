@@ -1,0 +1,603 @@
+Iterazione  0
+a=0.1 ref=90
+insulina min=3.363636363636365,max=18.0125859528217
+glucosio min=67.5334812013634,max=145.4857813819394
+Test Passed y= 0.0
+
+Iterazione  1
+a=0.1 ref=91
+insulina min=3.272727272727274,max=17.41991173581178
+glucosio min=68.0532392659928,max=145.5570958627493
+Test Passed y= 0.0
+
+Iterazione  2
+a=0.1 ref=92
+insulina min=3.181818181818181,max=16.82723654499566
+glucosio min=68.57294963369485,max=145.6282046565349
+Test Passed y= 0.0
+
+Iterazione  3
+a=0.1 ref=93
+insulina min=3.090909090909091,max=16.23456019719649
+glucosio min=69.09262145501093,max=145.6990936961907
+Test Passed y= 0.0
+
+Iterazione  4
+a=0.1 ref=94
+insulina min=3.0,max=15.64188361552686
+glucosio min=69.6122479677093,max=145.7700938237721
+Test Passed y= 0.0
+
+Iterazione  5
+a=0.1 ref=95
+insulina min=2.909090909090909,max=15.04920591149902
+glucosio min=70.13183568836192,max=145.8408802171723
+Test Passed y= 0.0
+
+Iterazione  6
+a=0.1 ref=96
+insulina min=2.818181818181818,max=14.45652729767906
+glucosio min=70.6513824191423,max=145.9116762448021
+Test Passed y= 0.0
+
+Iterazione  7
+a=0.1 ref=97
+insulina min=2.063015264609673,max=13.86384797557391
+glucosio min=71.1708891424446,max=145.9824120869206
+Test Passed y= 0.0
+
+Iterazione  8
+a=0.1 ref=98
+insulina min=1.182261151898921,max=13.27116113641967
+glucosio min=71.69031587074925,max=146.0530678018429
+Test Passed y= 0.0
+
+Iterazione  9
+a=0.1 ref=99
+insulina min=0.3014985831122221,max=12.67848028374918
+glucosio min=72.20974102132763,max=146.1236463106364
+Test Passed y= 0.0
+
+Iterazione  10
+a=0.1 ref=100
+insulina min=0.0,max=12.08579839867844
+glucosio min=72.72912381829477,max=146.1940155089263
+Test Passed y= 0.0
+
+Iterazione  11
+a=0.1 ref=101
+insulina min=0.0,max=11.49311555249383
+glucosio min=73.24846629160163,max=146.2644065337241
+Test Passed y= 0.0
+
+Iterazione  12
+a=0.1 ref=102
+insulina min=0.0,max=10.90043213745477
+glucosio min=73.76360785557479,max=146.3347293470915
+Test Passed y= 0.0
+
+Iterazione  13
+a=0.1 ref=103
+insulina min=0.0,max=10.30774771706622
+glucosio min=74.27220389272547,max=146.4049577048616
+Test Passed y= 0.0
+
+Iterazione  14
+a=0.1 ref=104
+insulina min=0.0,max=9.715062614498244
+glucosio min=74.78045198737874,max=146.4751192674056
+Test Passed y= 0.0
+
+Iterazione  15
+a=0.1 ref=105
+insulina min=0.0,max=9.122376840915798
+glucosio min=75.28894431315625,max=146.5451865871216
+Test Passed y= 0.0
+
+Iterazione  16
+a=0.1 ref=106
+insulina min=0.0,max=8.529691329198325
+glucosio min=75.80569397960977,max=146.6151704349249
+Test Passed y= 0.0
+
+Iterazione  17
+a=0.1 ref=107
+insulina min=0.0,max=7.937003949927623
+glucosio min=76.32237651662928,max=146.6850959817609
+Test Passed y= 0.0
+
+Iterazione  18
+a=0.1 ref=108
+insulina min=0.0,max=7.344315139420533
+glucosio min=76.58016707170478,max=146.7549388776303
+Test Passed y= 0.0
+
+Iterazione  19
+a=0.1 ref=109
+insulina min=0.0,max=6.751625516136989
+glucosio min=76.74377427329289,max=146.8223842110286
+Test Passed y= 0.0
+
+Iterazione  20
+a=0.1 ref=110
+insulina min=0.0,max=6.158935841497275
+glucosio min=76.90672931376977,max=146.8894707813476
+Test Passed y= 0.0
+
+Iterazione  21
+a=0.1 ref=111
+insulina min=0.0,max=5.566244892884219
+glucosio min=77.0690160238076,max=146.9564743589515
+Test Passed y= 0.0
+
+Iterazione  22
+a=0.1 ref=112
+insulina min=0.0,max=4.973552899693193
+glucosio min=77.23067822250458,max=147.0233924254508
+Test Passed y= 0.0
+
+Iterazione  23
+a=0.1 ref=113
+insulina min=0.0,max=4.380860180266593
+glucosio min=77.39171557152652,max=147.090218198318
+Test Passed y= 0.0
+
+Iterazione  24
+a=0.1 ref=114
+insulina min=0.0,max=3.788166707684064
+glucosio min=77.55211620685137,max=147.1569707010054
+Test Passed y= 0.0
+
+Iterazione  25
+a=0.2 ref=90
+insulina min=6.166666666666664,max=15.13600818810549
+glucosio min=72.1804422632763,max=145.8446377891837
+Test Passed y= 0.0
+
+Iterazione  26
+a=0.2 ref=91
+insulina min=5.999999999999999,max=14.53293904362517
+glucosio min=72.65911790863449,max=145.9161496749174
+Test Passed y= 0.0
+
+Iterazione  27
+a=0.2 ref=92
+insulina min=5.833333333333336,max=13.9298607475206
+glucosio min=73.13767984741048,max=145.9877089497281
+Test Passed y= 0.0
+
+Iterazione  28
+a=0.2 ref=93
+insulina min=5.666666666666666,max=13.32677911081975
+glucosio min=73.61614794289954,max=146.0592177930566
+Test Passed y= 0.0
+
+Iterazione  29
+a=0.2 ref=94
+insulina min=5.5,max=12.72369230062562
+glucosio min=74.09451530317793,max=146.1306197622918
+Test Passed y= 0.0
+
+Iterazione  30
+a=0.2 ref=95
+insulina min=5.279229432926538,max=12.12060204070398
+glucosio min=74.57276497120881,max=146.2018311203106
+Test Passed y= 0.0
+
+Iterazione  31
+a=0.2 ref=96
+insulina min=4.370130423260226,max=11.51750506673532
+glucosio min=75.05091933318866,max=146.2730592221109
+Test Passed y= 0.0
+
+Iterazione  32
+a=0.2 ref=97
+insulina min=3.460946563097345,max=10.91440371779984
+glucosio min=75.52897309286304,max=146.3442276148099
+Test Passed y= 0.0
+
+Iterazione  33
+a=0.2 ref=98
+insulina min=2.551659200065203,max=10.3112955826062
+glucosio min=75.75169033928529,max=146.4153027370082
+Test Passed y= 0.0
+
+Iterazione  34
+a=0.2 ref=99
+insulina min=1.642296066594588,max=9.708185139032103
+glucosio min=75.92275743183603,max=146.4863069526268
+Test Passed y= 0.0
+
+Iterazione  35
+a=0.2 ref=100
+insulina min=0.7328363248303611,max=9.105068184580787
+glucosio min=76.09310642030243,max=146.5572232921166
+Test Passed y= 0.0
+
+Iterazione  36
+a=0.2 ref=101
+insulina min=0.0,max=8.501944787650753
+glucosio min=76.26271926514663,max=146.6280547522878
+Test Passed y= 0.0
+
+Iterazione  37
+a=0.2 ref=102
+insulina min=0.0,max=7.89881877179025
+glucosio min=76.43034251485776,max=146.6988344560667
+Test Passed y= 0.0
+
+Iterazione  38
+a=0.2 ref=103
+insulina min=0.0,max=7.29568574924383
+glucosio min=76.59732798975315,max=146.7687965246012
+Test Passed y= 0.0
+
+Iterazione  39
+a=0.2 ref=104
+insulina min=0.0,max=6.692550628929936
+glucosio min=76.76361779093614,max=146.8368043572939
+Test Passed y= 0.0
+
+Iterazione  40
+a=0.2 ref=105
+insulina min=0.0,max=6.089408296529102
+glucosio min=76.92923895386258,max=146.9047238876136
+Test Passed y= 0.0
+
+Iterazione  41
+a=0.2 ref=106
+insulina min=0.0,max=5.486259592312235
+glucosio min=77.09417033165832,max=146.9725658656796
+Test Passed y= 0.0
+
+Iterazione  42
+a=0.2 ref=107
+insulina min=0.0,max=4.883106766037875
+glucosio min=77.25845968329114,max=147.0403153979259
+Test Passed y= 0.0
+
+Iterazione  43
+a=0.2 ref=108
+insulina min=0.0,max=4.279949430256256
+glucosio min=77.42210756496402,max=147.1079911749528
+Test Passed y= 0.0
+
+Iterazione  44
+a=0.2 ref=109
+insulina min=0.0,max=3.676786628465738
+glucosio min=77.58534364271472,max=147.1755740366243
+Test Passed y= 0.0
+
+Iterazione  45
+a=0.2 ref=110
+insulina min=0.0,max=3.073618560151656
+glucosio min=77.74866892390806,max=147.2430686146174
+Test Passed y= 0.0
+
+Iterazione  46
+a=0.2 ref=111
+insulina min=0.0,max=2.666666666666667
+glucosio min=77.9113625369649,max=147.3104687662318
+Test Passed y= 0.0
+
+Iterazione  47
+a=0.2 ref=112
+insulina min=0.0,max=2.500000000000001
+glucosio min=78.07342916022017,max=147.3777915044766
+Test Passed y= 0.0
+
+Iterazione  48
+a=0.2 ref=113
+insulina min=0.0,max=2.333333333333335
+glucosio min=78.23480910323873,max=147.4457295477048
+Test Passed y= 0.0
+
+Iterazione  49
+a=0.2 ref=114
+insulina min=0.0,max=2.166666666666665
+glucosio min=78.39561620742828,max=147.515998500371
+Test Passed y= 0.0
+
+Iterazione  50
+a=0.3 ref=90
+insulina min=8.538461538461537,max=13.49265254590444
+glucosio min=74.94671390316151,max=146.094379803063
+Test Passed y= 0.0
+
+Iterazione  51
+a=0.3 ref=91
+insulina min=8.307692307692307,max=12.51213447819267
+glucosio min=75.12683893888614,max=146.1676985134047
+Test Passed y= 0.0
+
+Iterazione  52
+a=0.3 ref=92
+insulina min=8.076923076923077,max=11.88861915304969
+glucosio min=75.30619666477479,max=146.2410567341836
+Test Passed y= 0.0
+
+Iterazione  53
+a=0.3 ref=93
+insulina min=7.846153846153845,max=11.26509039859055
+glucosio min=75.48477182694074,max=146.314318129587
+Test Passed y= 0.0
+
+Iterazione  54
+a=0.3 ref=94
+insulina min=6.932002337936941,max=10.64154831462128
+glucosio min=75.66256196684165,max=146.3875057077674
+Test Passed y= 0.0
+
+Iterazione  55
+a=0.3 ref=95
+insulina min=5.999300042856584,max=10.01799377624069
+glucosio min=75.83973155998915,max=146.4606209177611
+Test Passed y= 0.0
+
+Iterazione  56
+a=0.3 ref=96
+insulina min=5.066464235961977,max=9.394424038506841
+glucosio min=76.0160508097393,max=146.533632070977
+Test Passed y= 0.0
+
+Iterazione  57
+a=0.3 ref=97
+insulina min=4.13349225925425,max=8.770841142327697
+glucosio min=76.19169196779414,max=146.6065595366778
+Test Passed y= 0.0
+
+Iterazione  58
+a=0.3 ref=98
+insulina min=3.200382835396387,max=8.147245040617069
+glucosio min=76.36546888614042,max=146.6794427129713
+Test Passed y= 0.0
+
+Iterazione  59
+a=0.3 ref=99
+insulina min=2.267135057798364,max=7.523633385889037
+glucosio min=76.53828046054076,max=146.7516800172914
+Test Passed y= 0.0
+
+Iterazione  60
+a=0.3 ref=100
+insulina min=1.249452256577839,max=6.90001178449772
+glucosio min=76.7103525995351,max=146.8217347934238
+Test Passed y= 0.0
+
+Iterazione  61
+a=0.3 ref=101
+insulina min=0.02325022588821965,max=6.276377137327232
+glucosio min=76.88171423929069,max=146.8916619025639
+Test Passed y= 0.0
+
+Iterazione  62
+a=0.3 ref=102
+insulina min=0.0,max=5.76923076923077
+glucosio min=77.05235730687694,max=146.9615294719349
+Test Passed y= 0.0
+
+Iterazione  63
+a=0.3 ref=103
+insulina min=0.0,max=5.53846153846154
+glucosio min=77.22227848196721,max=147.0312992283985
+Test Passed y= 0.0
+
+Iterazione  64
+a=0.3 ref=104
+insulina min=0.0,max=5.30769230769231
+glucosio min=77.39152333584192,max=147.1009899259289
+Test Passed y= 0.0
+
+Iterazione  65
+a=0.3 ref=105
+insulina min=0.0,max=5.076923076923077
+glucosio min=77.56021308036902,max=147.1705879250035
+Test Passed y= 0.0
+
+Iterazione  66
+a=0.3 ref=106
+insulina min=0.0,max=4.846153846153847
+glucosio min=77.72916812114711,max=147.2401017029617
+Test Passed y= 0.0
+
+Iterazione  67
+a=0.3 ref=107
+insulina min=0.0,max=4.615384615384617
+glucosio min=77.89736682789724,max=147.3095184968324
+Test Passed y= 0.0
+
+Iterazione  68
+a=0.3 ref=108
+insulina min=0.0,max=4.384615384615381
+glucosio min=78.06489795744197,max=147.3788373714263
+Test Passed y= 0.0
+
+Iterazione  69
+a=0.3 ref=109
+insulina min=0.0,max=4.153846153846154
+glucosio min=78.16170831200623,max=147.4493532471225
+Test Passed y= 0.0
+
+Iterazione  70
+a=0.3 ref=110
+insulina min=0.0,max=3.923076923076923
+glucosio min=78.22197337538212,max=147.5216985618407
+Test Passed y= 0.0
+
+Iterazione  71
+a=0.3 ref=111
+insulina min=0.0,max=3.692307692307693
+glucosio min=78.28206577990161,max=147.5939243314744
+Test Passed y= 0.0
+
+Iterazione  72
+a=0.3 ref=112
+insulina min=0.0,max=3.461538461538461
+glucosio min=78.3420305443901,max=147.5977622601802
+Test Passed y= 0.0
+
+Iterazione  73
+a=0.3 ref=113
+insulina min=0.0,max=3.230769230769231
+glucosio min=78.40117986979901,max=147.5970091021328
+Test Passed y= 0.0
+
+Iterazione  74
+a=0.3 ref=114
+insulina min=0.0,max=3.000000000000001
+glucosio min=78.46006842720362,max=147.5962489670939
+Test Passed y= 0.0
+
+Iterazione  75
+a=0.4 ref=90
+insulina min=10.57142857142857,max=13.66778774063465
+glucosio min=75.354608968931,max=146.269716157411
+Test Passed y= 0.0
+
+Iterazione  76
+a=0.4 ref=91
+insulina min=10.13035639876758,max=12.42581836392377
+glucosio min=75.5402334043763,max=146.3456936605878
+Test Passed y= 0.0
+
+Iterazione  77
+a=0.4 ref=92
+insulina min=9.176127771588025,max=11.18352998395951
+glucosio min=75.72514230018581,max=146.4215746968481
+Test Passed y= 0.0
+
+Iterazione  78
+a=0.4 ref=93
+insulina min=8.221617769263379,max=9.940743244992099
+glucosio min=75.90923993333452,max=146.4974000296508
+Test Passed y= 0.0
+
+Iterazione  79
+a=0.4 ref=94
+insulina min=7.266917545041575,max=9.428571428571429
+glucosio min=76.09251170319673,max=146.5731249438759
+Test Passed y= 0.0
+
+Iterazione  80
+a=0.4 ref=95
+insulina min=6.312045002348182,max=9.142857142857146
+glucosio min=76.27445648111404,max=146.6487494733158
+Test Passed y= 0.0
+
+Iterazione  81
+a=0.4 ref=96
+insulina min=5.356955177428842,max=8.857142857142861
+glucosio min=76.4547291652825,max=146.7243308634173
+Test Passed y= 0.0
+
+Iterazione  82
+a=0.4 ref=97
+insulina min=4.401706508189623,max=8.571428571428577
+glucosio min=76.63424054699273,max=146.797126871856
+Test Passed y= 0.0
+
+Iterazione  83
+a=0.4 ref=98
+insulina min=3.446275546625479,max=8.285714285714285
+glucosio min=76.81297599022815,max=146.8697493378773
+Test Passed y= 0.0
+
+Iterazione  84
+a=0.4 ref=99
+insulina min=2.4756089782332,max=8.000000000000002
+glucosio min=76.990933344169,max=146.9422764297256
+Test Passed y= 0.0
+
+Iterazione  85
+a=0.4 ref=100
+insulina min=1.230053280030868,max=7.714285714285716
+glucosio min=77.16811232135876,max=147.0147214320692
+Test Passed y= 0.0
+
+Iterazione  86
+a=0.4 ref=101
+insulina min=0.0,max=7.428571428571429
+glucosio min=77.28912271979067,max=147.0870589233778
+Test Passed y= 0.0
+
+Iterazione  87
+a=0.4 ref=102
+insulina min=0.0,max=7.142857142857146
+glucosio min=77.36662249320817,max=147.1593178153705
+Test Passed y= 0.0
+
+Iterazione  88
+a=0.4 ref=103
+insulina min=0.0,max=6.857142857142854
+glucosio min=77.44385658159345,max=147.2314708584202
+Test Passed y= 0.0
+
+Iterazione  89
+a=0.4 ref=104
+insulina min=0.0,max=6.571428571428575
+glucosio min=77.5208204341657,max=147.3035204076172
+Test Passed y= 0.0
+
+Iterazione  90
+a=0.4 ref=105
+insulina min=0.0,max=6.285714285714285
+glucosio min=77.59751679923428,max=147.3754719326113
+Test Passed y= 0.0
+
+Iterazione  91
+a=0.4 ref=106
+insulina min=0.0,max=5.999999999999998
+glucosio min=77.67395464548238,max=147.4489844067025
+Test Passed y= 0.0
+
+Iterazione  92
+a=0.4 ref=107
+insulina min=0.0,max=5.714285714285716
+glucosio min=77.75011945566231,max=147.5240378210237
+Test Passed y= 0.0
+
+Iterazione  93
+a=0.4 ref=108
+insulina min=0.0,max=5.428571428571429
+glucosio min=77.82603814139856,max=147.5989993434396
+Test Passed y= 0.0
+
+Iterazione  94
+a=0.4 ref=109
+insulina min=0.0,max=5.142857142857146
+glucosio min=77.90169797004268,max=147.6030776315811
+Test Passed y= 0.0
+
+Iterazione  95
+a=0.4 ref=110
+insulina min=0.0,max=4.857142857142856
+glucosio min=77.97711805560431,max=147.6022008276314
+Test Passed y= 0.0
+
+Iterazione  96
+a=0.4 ref=111
+insulina min=0.0,max=4.571428571428575
+glucosio min=78.05229098317922,max=147.6013145617527
+Test Passed y= 0.0
+
+Iterazione  97
+a=0.4 ref=112
+insulina min=0.0,max=4.285714285714287
+glucosio min=78.12721292171955,max=147.6004125230397
+Test Passed y= 0.0
+
+Iterazione  98
+a=0.4 ref=113
+insulina min=0.0,max=4.000000000000003
+glucosio min=78.20190626266628,max=147.5995019686676
+Test Passed y= 0.0
+
+Iterazione  99
+a=0.4 ref=114
+insulina min=0.0,max=3.714285714285718
+glucosio min=78.27634841304985,max=147.5985834692801
+Test Passed y= 0.0
+
+num pass =  100.0 , num fail =  0 , total tests =  100.0
+pass prob =  1.0 , fail prob =  0.0
+CPU Time =  878.5463573932648

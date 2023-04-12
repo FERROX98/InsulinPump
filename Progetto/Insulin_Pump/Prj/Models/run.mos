@@ -1,0 +1,31 @@
+loadModel(Modelica);
+getErrorString();
+
+loadFile("connectors.mo");
+getErrorString();
+
+loadFile("rag.mo");
+getErrorString();
+
+loadFile("patient.mo");
+getErrorString();
+
+loadFile("Monitor.mo");
+getErrorString();
+
+loadFile("Pump.mo");
+getErrorString();
+
+loadFile("mealgen.mo");
+getErrorString();
+
+loadFile("System.mo");
+getErrorString();
+
+
+simulate(System, stopTime=2000);
+getErrorString();
+
+
+plot({pa.G,m.y,pu.insulin_out,pa.Rameal,rag.delta,pa.insulin_from_pump}, externalWindow=true);
+getErrorString();
