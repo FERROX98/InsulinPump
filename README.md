@@ -1,281 +1,96 @@
-﻿<a name="br1"></a> 
+# Insulin Pump Simulation
+_Model-Based Software Engineering Project_
 
-Progeto di
+**Authors**  
+- Daniel Ferro  
+- Edoardo L.  
+- Mateo L.
 
-Model Based Sofware Engineering
+## 📖 Overview
 
-**Insulin Pump**
+Questo progetto propone un modello di **pompa di insulina** che simula il comportamento di un paziente con diabete di tipo 2 prima, durante e dopo i pasti.  
+La pompa eroga insulina a velocità variabile durante la giornata per adeguarsi ai fabbisogni glicemici del paziente, migliorando il controllo metabolico e riducendo il rischio di ipoglicemia.
 
-Daniel Ferro
+Il sistema è implementato utilizzando Modelica, con il supporto di script Python per la generazione di scenari di test.
 
-Edoardo L.
+---
 
-Mateo L.
+## 🩺 Sistema simulato
 
+Il sistema è composto dalle seguenti componenti principali:
 
+- **Paziente**: modella le caratteristiche fisiologiche individuali, come livelli di insulina e glucosio.
+- **Ambiente**: rappresenta l’assunzione di cibo e la tempistica dei pasti.
+- **Pompa di insulina**: regola la somministrazione di insulina in base al livello di glucosio misurato.
+- **Monitor**: verifica che il glucosio rimanga in un intervallo di sicurezza (50-200 mg/dL).
 
-<a name="br2"></a> 
+---
 
-**1 Il sistema**
+## ⚙️ Architettura del sistema
 
-Questo documento descrive un possibile modello per Insulin Pump, cioè un
+Le componenti principali modellate in Modelica sono:
 
-sistema che simula il comportamento di pazient con diabete di tpo due prima,
+- `mealgen.mo`: gestisce la generazione e la simulazione dei pasti (un pasto ogni 8 ore, durata 1 ora).
+- `Pump.mo`: implementa la strategia di somministrazione dell’insulina in base al livello di glucosio.
+- `patient.mo`: calcola i livelli di glucosio nel sangue in funzione del cibo ingerito e dell’insulina somministrata.
+- `Monitor.mo`: controlla i limiti di sicurezza per i livelli di glucosio; se i valori escono dall’intervallo, il paziente è dichiarato “morto” e il test fallisce.
+- `Connectors.mo`: definisce i connettori per collegare ingressi e uscite delle componenti.
+- `Ragmeal.mo`: modella il rate appearance del glucosio con un delta variabile tra 10 e 30.
 
-dopo e durante i past.
+---
 
-Il microinfusore consente di infondere insulina a velocità variabile durante la
+## 🎯 Requisiti del sistema
 
-giornata permetendo di creare un dose insulinica il più aderente possibile alle reali
+### Requisiti funzionali
+- Il glucosio **non deve mai scendere sotto 50 mg/dL**.
+- Il glucosio deve rimanere **il più vicino possibile a 100 mg/dL**.
+- La pompa deve funzionare correttamente anche in presenza di rumore sui dati.
 
-esigenze di ogni singolo individuo nei diversi moment della sua vita quotdiana.
+### Requisiti non funzionali
+- Minimizzare la quantità totale di insulina iniettata.
+- Massimizzare l’intervallo di campionamento (sampling time) della pompa.
 
-Questo comporta da un lato la possibilità di controllare in maniera più precisa la
+---
 
-glicemia nelle diverse fasi della giornata, migliorando il controllo metabolico
+## 🧪 Modellazione dei requisiti
 
-globale. Dall'altro, il poter infondere insulina a velocità variabile consente di
+- La modellazione dei requisiti funzionali avviene principalmente tramite:
+  - Il modello del paziente (calcolo glicemia in ogni momento).
+  - Il modello della pompa (erogazione insulina in funzione della glicemia).
+  - Il monitor (verifica violazioni di safety/liveness).
+- Per i requisiti non funzionali abbiamo implementato lo script `synth.py`, che cerca le combinazioni di parametri della pompa (parametri `a` e `ref`) per minimizzare l’insulina iniettata mantenendo il paziente in un intervallo sicuro di glicemia.
 
-ridurre il rischio di ipoglicemia perché consente di infondere minor quanttà di
+---
 
-insulina in quei moment della giornata dove il fabbisogno è minimo, come ad
+## 🔬 Testing
 
-esempio durante la note.
+- Lo script `verify.py` simula scenari realistici generando età, altezza, peso e sesso coerenti. Sono stati eseguiti test su **100, 1000 e 10.000 pazienti**, i cui risultati sono riportati nei file:
+  - `100_log`
+  - `1000_log`
+  - `10000_log`
 
-Abbiamo simulato e modellato il sistema atraverso le seguent component in
+- Lo script `synth.py` esplora combinazioni di parametri di controllo simulando su 100 e 1000 campioni. I risultati sono nei file:
+  - `100_synth_log`
+  - `1000_synth_log`
 
-modo da veriﬁcare piu’ casi possibili:
+---
 
-• Paziente, modella le carateristche di una persona in base all’insulina ed il
+## 📊 Rumore nei dati
 
-glucosio present;
+Per simulare l’imprecisione dei sensori, abbiamo introdotto un rumore casuale nei dati del paziente, variabile tra -10% e +10% del valore reale.  
+La pompa è stata verificata con questo rumore su un ampio numero di simulazioni, confermandone il corretto funzionamento.
 
-• Ambiente, modella il cibo ingerito dal paziente e i vari intervalli tra i past in
+---
 
-una giornata;
+## 📁 Allegati
 
-• Pompa di insulina, modella il sistema che controlla l’insulina inietata sulla
+I risultati sperimentali sono allegati nella cartella `/results`, contenente i file di log delle simulazioni.
 
-base del glucosio del paziente, cercando di minimizzarne l’uso e tenere il
+---
 
-paziente lontano da situazioni di ipo e iperglicemia.
+## ✅ Conclusioni
 
-**2 Scenari Operatii**
+Il sistema simulato mostra che la pompa di insulina è in grado di mantenere i pazienti entro un range di sicurezza, anche in presenza di variabilità dei parametri e rumore sui dati.
 
-Gli scenari operatvi per questo sistema sono tute le possibili combinazioni delle
+---
 
-carateristche di una persona, quali altezza, peso, età, genere; gli scenari variano
-
-poichè la pompa è pensata per essere utlizzata da una persona qualsiasi, cioè
-
-senza delle carateristche partcolari.
-
-1
-
-
-
-<a name="br3"></a> 
-
-**2.1 Modellazione atraverso Modelica**
-
-Lo script verify.py simula il sistema della pompa generando in maniere pseudo-
-
-intelligente delle possibili carateristche che rappresentano un paziente come:
-
-età,altezza,peso,sesso.
-
-Le carateristche quindi non vengono generate in maniera totalmente random.
-
-Abbiamo sviluppato una funzione che generà età,altezza,peso,sesso in funzione
-
-dell’età cosi da tagliare fuori dai test tut quei modelli di pazient che nellà realtà
-
-non sarebbero possibili.
-
-Come: Età 50, Peso, 10Kg
-
-Qui viene rappresentata la funzione di cui parliamo:
-
-**3 Architetura del sistema**
-
-Abbiamo modellato le seguent component:
-
-• **mealgen.mo**, questa componente gestsce l’ingestone di cibo che verrà data
-
-in pasto al modello del Paziente. Il paziente eﬀetuerà un pasto ogni 8 ore, di
-
-cui ogni pasto dura un’ora.
-
-• **Pump.mo**, questa componente gestsce la strategia con la quale viene
-
-inietata l’insulina al paziente. Controlla il livello di glucosio atualmente
-
-presente nel paziente e con delle formule calcola la dose di insulina da
-
-inietare.
-
-• **patent.mo**, Il paziente ha in input la dose di insulina da pump.mo e la dose
-
-di cibo da mealgen.mo e calcola il glucosio nel sangue atraverso delle
-
-equazioni.
-
-• **Monitor.mo**, E’ il monitor che controlla se il glucosio del paziente non
-
-scenda mai soto i 50 mg/dL o superi i 200 mg/dL altriment il monitor
-
-dichiara il paziente morto e il test fallisce.
-
-2
-
-
-
-<a name="br4"></a> 
-
-• **Connectors.mo**, E’ un modello che permete di creare il tpo che connete gli
-
-input agli output.
-
-• **Ragmeal.mo**, Modella il rate appareance glucose con un valore delta
-
-compreso tra 10 e 30.
-
-3
-
-
-
-<a name="br5"></a> 
-
-**4 Requisit del sistema**
-
-• **Requisit Funzionali**
-
-• Il glucosio non dovrebbe mai scendere soto i 50 mg/dL;
-
-• Il glucosio dovrebbe stare piu’ vicino possibile ai 100 mg/dL.
-
-• La pompa di insulina deve contnuare a funzionare anche con una
-
-percentuale di rumore
-
-**4.1 Requisit non Funzionali**
-
-• L’insulina inietata deve essere minimizzata;
-
-• Il sampling tme della pompa di insulina deve essere massimizzato.
-
-**4.2 Modellazione requisit con Modelica**
-
-Abbiamo modellato i requisit funzionali servendoci principalmente di tre modelli:
-
-\- Il modello del paziente, che atraverso le formule del paper calcola in ogni
-
-momento il livello di glucosio nel sangue.
-
-\- Il modello della pompa di insulina, che in base a quanto glucosio è già presente
-
-nel sangue del paziente, eroga insulina.
-
-\- Il monitor, che controlla se i requisit di liveness e safety sono violat.
-
-Per quanto riguarda i requisit non funzionali, abbiamo creato uno script sinth.py
-
-per cercare quali parametri della strategia della pompa è possibile variare per
-
-otenere una quanttà di insulina da inietare minima, ma tenendo comunque il
-
-paziente nei range ragionevoli di glucosio.
-
-**Nel nostro sinth.py iteriamo simulando il modello con una combinazione dei**
-
-**parametri "a" e "ref" della pompa di insulina (ControlloGlu). Nello script si prova**
-
-**a simulare variando la "a" tra 0,5 e 1 e "ref" tra 90 e 115 per il log\_100 e “a” tra**
-
-**0,1 e 1.2 e “ref” tra 60 e 160 per log\_1000.**
-
-**Con la variazione di quest parametri possiamo osservare le diverse quanttà di**
-
-**insulina inietate ad un paziente con la stesse carateristche.**
-
-4
-
-
-
-<a name="br6"></a> 
-
-**5 Extra**
-
-Abbiamo introdoto una percentuale di rumore che va ad inﬂuire diretamente
-
-sui valori del paziente. Questo rumore inﬂuenza i dat per un intervallo che
-
-oscilla tra -10% e +10% del valore stesso.
-
-Per simulare che la pompa contnui a funzionare nonostante il rumore abbiamo
-
-randomizzato i valori nel ﬁle verify.py e testato su 100/1000/10000 pazient.
-
-Dai risultat che abbiamo allegato in fondo siamo in grado di aﬀermare che la
-
-pompa contnui a funzionare corretamente.
-
-**6 Risultat Sperimentali**
-
-**6.1 run.mos**
-
-Glucosia e insulina
-
-5
-
-
-
-<a name="br7"></a> 
-
-Glucosio, Rameal e Delta:
-
-Glucosio,Insulina e Delta:
-
-6
-
-
-
-<a name="br8"></a> 
-
-**6.2 verify.py**
-
-Abbiamo eﬀetuato test utlizzato il nostro verify.py eseguendolo su 100, 1000 e
-
-10000 samples.
-
-• 100 samples:
-
-• 1000 samples:
-
-• 10000 samples:
-
-7
-
-
-
-<a name="br9"></a> 
-
-In allegato i ﬁle contenent i risultat, rispetvamente 100\_log, 1000\_log,
-
-10000\_log
-
-**6.3 synth.py**
-
-Abbiamo eﬀetuato test utlizzato il nostro synth.py eseguendolo su 100, 1000
-
-samples.
-
-• 100 samples:
-
-• 1000 samples:
-
-In allegato i ﬁle contenent i risultat, rispetvamente 100\_synth\_log,
-
-1100\_synth\_log
-
-8
